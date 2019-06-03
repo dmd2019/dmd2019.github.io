@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="读此书的目的很明确，是学习作者亲身经验总结出来的思路体系形成自己的基本思考框架；同时将作者对于网易云音乐产品操刀的亲身案例作为这个基本思考框架下的实例。 这篇文章就是对于产品定位这一环节的学习记录与理解总结。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="读书笔记|在激烈竞争中寻找产品定位（一）">
+<meta property="og:url" content="http://yoursite.com/2019/06/03/读书笔记-在激烈竞争中寻找产品定位（一）/index.html">
+<meta property="og:site_name" content="从零单排">
+<meta property="og:description" content="读此书的目的很明确，是学习作者亲身经验总结出来的思路体系形成自己的基本思考框架；同时将作者对于网易云音乐产品操刀的亲身案例作为这个基本思考框架下的实例。 这篇文章就是对于产品定位这一环节的学习记录与理解总结。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-06-03T15:59:41.519Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="读书笔记|在激烈竞争中寻找产品定位（一）">
+<meta name="twitter:description" content="读此书的目的很明确，是学习作者亲身经验总结出来的思路体系形成自己的基本思考框架；同时将作者对于网易云音乐产品操刀的亲身案例作为这个基本思考框架下的实例。 这篇文章就是对于产品定位这一环节的学习记录与理解总结。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/06/03/读书笔记-在激烈竞争中寻找产品定位（一）/">
+
+
+
+
+
+  <title>读书笔记|在激烈竞争中寻找产品定位（一） | 从零单排</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">从零单排</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/03/读书笔记-在激烈竞争中寻找产品定位（一）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhou">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从零单排">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">读书笔记|在激烈竞争中寻找产品定位（一）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-03T22:22:02+08:00">
+                2019-06-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>读此书的目的很明确，是学习作者亲身经验总结出来的思路体系形成自己的基本思考框架；同时将作者对于网易云音乐产品操刀的亲身案例作为这个基本思考框架下的实例。</p>
+<p>这篇文章就是对于产品定位这一环节的学习记录与理解总结。<a id="more"></a></p>
+<p>做产品定位，有一套基本的方法如下，有三个步骤。</p>
+<p>分析行业、市场、竞争对手等外部环境，从抽象到具象一步步剖析产品现在所处的环境</p>
+<p>结合外部的分析和自身用户群、优势的分析，找到产品打开市场的切入口。</p>
+<p>在切入点的基础上，对产品定位和长期发展做出阶段规划，并设计扩张的接口。</p>
+<p>其中整个方法最关键的在于“变化”二字，机会往往出现在变化之中。</p>
+<p>机会往往出现在未来发生巨大变化的行业中，所以思考产品定位的第一步，就是搞清楚自己产品所在行业的情况！这是发现机会的开始。</p>
+<p>那么可以如何分析一个行业的情况，可以拆解为以下三个问题。</p>
+<p>这个行业有哪些玩家？他们之间的关系是怎样的？以及行业现状？</p>
+<p>未来几年，这个行业会发生变化吗？会发生什么变化？这些变化中会产生什么机会？</p>
+<p>在行业里的玩家会如何抓住变化中的机会？</p>
+<h2 id="这个行业有哪些玩家？他们之间的关系是怎样的？以及行业现状？"><a href="#这个行业有哪些玩家？他们之间的关系是怎样的？以及行业现状？" class="headerlink" title="这个行业有哪些玩家？他们之间的关系是怎样的？以及行业现状？"></a>这个行业有哪些玩家？他们之间的关系是怎样的？以及行业现状？</h2><p>玩家：</p>
+<p>他们之间的关系是怎样的？</p>
+<p>首先音乐是一种内容。内容是这个行业的源头，因此这个行业最关键的就是内容。</p>
+<p>因此，处于音乐行业上游的几类玩家也是围绕音乐内容来明确自己的位置的。作词作曲编曲等幕后人员是音乐作品的灵魂；艺人给音乐作品打上个人标签；经济人、唱片公司、版权公司则帮助艺人制作音乐、发行音乐、推广音乐、传播音乐、明确音乐版权，以及做音乐的营收。</p>
+<p>整体来说，音乐行业可以分为三类玩家。</p>
+<p>内容源部分：词语作者幕后人员、艺人</p>
+<p>中间部分：涉及音乐的发行、传播、产生营收等诸多环节，从经纪人、唱片公司到演出公司、在线音乐平台都归为此部分</p>
+<p>听众部分：听众</p>
+<p>其中，中间部分是帮助上游的内容源部分更好地输送内容到下游的听众部分，并在整个过程中获取利润。在80、90年代，唱片店、音乐电台/排行榜、大产品公司都把持过中间部分，在音乐行业中发挥了举足轻重的影响力</p>
+<p>行业现状？</p>
+<p>过去，在CD销售的黄金年代，整体行业利润非常丰厚。</p>
+<p>现在，自从互联网开始兴起，数字音乐逐渐取代CD后，打破了原本稳固的商业模式，由于音乐版权管理不善，新的商业模式也没有建立起来，音乐行业整体收入下降。</p>
+<h2 id="未来几年，这个行业会发生变化吗？会发生什么变化？这些变化中会产生什么机会-（这里注意变化和机会互相的关系）"><a href="#未来几年，这个行业会发生变化吗？会发生什么变化？这些变化中会产生什么机会-（这里注意变化和机会互相的关系）" class="headerlink" title="未来几年，这个行业会发生变化吗？会发生什么变化？这些变化中会产生什么机会?（这里注意变化和机会互相的关系）"></a>未来几年，这个行业会发生变化吗？会发生什么变化？这些变化中会产生什么机会?（这里注意变化和机会互相的关系）</h2><p>这里需注意变化和机会的关系，变化是客观存在的，机会需主动从变化中去识别，去挖掘。</p>
+<p>会发生变化吗？</p>
+<p>首先，对比世界上其他国家。</p>
+<p>其次，类比相近行业。</p>
+<p>所以基本判断是会发生，并且朝着好的方向变化</p>
+<p>发生什么变化？</p>
+<p>关键变化是，移动互联网和正版化。</p>
+<p>移动互联网的特点是：资源极多、时间碎片化、传播极广。其所带来的变化，概括来说，是移动互联网影响了听众关于使用音乐的方式，进而会引发行业中间部分的变化（即行业的革命）</p>
+<p>具体变化的点如下：</p>
+<p>听众能随时随地听音乐，且能听全世界的音乐</p>
+<p>听众更愿意互动和分享了，微博和微信教育了用户随时随地分享自己的生活状态</p>
+<p>互联网让音乐的传播速度变得飞快</p>
+<p>用户的影响力比CD时代大了很多。音乐出来后用户马上能评价自己是否喜欢这个音乐</p>
+<p>相比以往的电台、排行榜、唱片公司，互联网平台有机会作为中心化平台连接巨量音乐用户</p>
+<p>这其中变化的本质是互联网连接了人与人，人与信息后。1.让音乐作为一种信息来说，它的传播方式改变后，传播的速度就变得更快，范围更广了。2.同时连接巨量人与人，人与信息的中心化平台，也让用户有了互动的机会。3.音乐传播方式的改变，音乐行业的利润分配机制也就可能随之改变。</p>
+<p>这些具体的变化可以总结为三个方面。音乐传播，音乐互动，利润分配</p>
+<p>这个变化中会产生什么机会？</p>
+<p>移动互联网。概括来说，一，网络把人与信息连接起来，改变了音乐传播互动的渠道，有减少中间环节的机会。二，传播方式改变，音乐行业会产生更利于内容源的利润分配机制。</p>
+<h2 id="行业里的玩家会如何抓住变化中的机会？"><a href="#行业里的玩家会如何抓住变化中的机会？" class="headerlink" title="行业里的玩家会如何抓住变化中的机会？"></a>行业里的玩家会如何抓住变化中的机会？</h2><p>内容源部分。</p>
+<p>客观的变化是，获得更多互联网的流量，且流量结构直接、扁平；可以直接获得听众的反馈。这些变化同时也带了的机会是能获得直接的听众反馈，便于更快作出反应；流量更加直接、扁平，有自主营销，自主传播的机会；内容长尾化</p>
+<p>中间部分。</p>
+<p>客观变化是流量渠道结构改变。机会是让听众与内容源更加靠近，取代传统电台、媒体等渠道，成为新的平台，制定新的商业模式。</p>
+<p>听众</p>
+<p>客观变化是可以听到全世界的音乐；可以更直接的与偶像互动；对自己喜欢的音乐更有话语权</p>
+<p>机会是对于音乐，有更大选择自主权。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/03/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Zhou</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#这个行业有哪些玩家？他们之间的关系是怎样的？以及行业现状？"><span class="nav-number">1.</span> <span class="nav-text">这个行业有哪些玩家？他们之间的关系是怎样的？以及行业现状？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#未来几年，这个行业会发生变化吗？会发生什么变化？这些变化中会产生什么机会-（这里注意变化和机会互相的关系）"><span class="nav-number">2.</span> <span class="nav-text">未来几年，这个行业会发生变化吗？会发生什么变化？这些变化中会产生什么机会?（这里注意变化和机会互相的关系）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#行业里的玩家会如何抓住变化中的机会？"><span class="nav-number">3.</span> <span class="nav-text">行业里的玩家会如何抓住变化中的机会？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zhou</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
